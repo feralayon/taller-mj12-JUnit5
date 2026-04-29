@@ -14,6 +14,10 @@ public class Carrito {
         return productos.size();
     }
 
+    public double calcularTotal() {
+        return 0;
+    }
+
     public boolean estaVacio() {
         return productos.isEmpty();
     }

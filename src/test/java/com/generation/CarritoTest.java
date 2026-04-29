@@ -22,4 +22,15 @@ class CarritoTest {
     }
 
 
+    @Test
+    void unCarritoConUnProductoNoEstaVacio() {
+        Carrito carrito = new Carrito();
+        Producto producto = new Producto("Mouse", 100.0, 2);
+
+        carrito.agregar(producto);
+
+        assertTrue(!carrito.estaVacio());
+    }
+
+
 }
