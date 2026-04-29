@@ -10,4 +10,16 @@ class CarritoTest {
         Carrito carrito = new Carrito();
         assertTrue(carrito.estaVacio());
     }
+
+    @Test
+    void despuesDeAgregarUnProductoLaCantidadEsUno() {
+        Carrito carrito = new Carrito();
+        Producto producto = new Producto("Mouse", 100.0, 2);
+
+        carrito.agregar(producto);
+
+        assertEquals(1, carrito.cantidadDeProductos());
+    }
+
+
 }
